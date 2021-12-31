@@ -1444,112 +1444,106 @@
       }
     },
     "discounts": {
-      "properties": {
-        "amount_money": {
-          "properties": {
-            "currency": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "amount": {
-              "type": [
-                "null",
-                "integer"
-              ]
-            }
-          },
-          "type": [
-            "null",
-            "object"
-          ]
-        },
-        "applied_money": {
-          "properties": {
-            "currency": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "amount": {
-              "type": [
-                "null",
-                "integer"
-              ]
-            }
-          },
-          "type": [
-            "null",
-            "object"
-          ]
-        },
-        "discount_type": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "catalog_object_id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "catalog_version": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "name": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "percentage": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "pricing_rule_id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "reward_ids": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "scope": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "type": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "uid": {
-          "type": [
-            "null",
-            "string"
-          ]
-        }
-      },
       "type": [
         "null",
-        "object"
-      ]
+        "array"
+      ],
+      "items": {
+        "properties": {
+          "amount_money": {
+            "properties": {
+              "currency": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "amount": {
+                "type": [
+                  "null",
+                  "integer"
+                ]
+              }
+            },
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "applied_money": {
+            "properties": {
+              "currency": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "amount": {
+                "type": [
+                  "null",
+                  "integer"
+                ]
+              }
+            },
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "catalog_object_id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "catalog_version": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "percentage": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "pricing_rule_id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "scope": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "type": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "uid": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": [
+          "null",
+          "object"
+        ]
+      }
     },
     "order_id": {
       "type": [
