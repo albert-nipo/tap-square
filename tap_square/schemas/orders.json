@@ -1226,6 +1226,26 @@
               "object"
             ]
           },
+          "total_discount_money": {
+            "properties": {
+              "currency": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "amount": {
+                "type": [
+                  "null",
+                  "integer"
+                ]
+              }
+            },
+            "type": [
+              "null",
+              "object"
+            ]
+          },
           "applied_discounts": {
             "type": [
               "null",
@@ -1300,25 +1320,80 @@
               "type": ["null", "object"]
             }
           },
-          "total_discount_money": {
-            "properties": {
-              "currency": {
-                "type": [
-                  "null",
-                  "string"
-                ]
-              },
-              "amount": {
-                "type": [
-                  "null",
-                  "integer"
-                ]
-              }
-            },
+          "modifiers": {
             "type": [
               "null",
-              "object"
-            ]
+              "array"
+            ],
+            "items": {
+              "properties": {
+                "uid": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "base_price_money": {
+                  "properties": {
+                    "currency": {
+                      "type": [
+                        "null",
+                        "string"
+                      ]
+                    },
+                    "amount": {
+                      "type": [
+                        "null",
+                        "integer"
+                      ]
+                    }
+                  },
+                  "type": [
+                    "null",
+                    "object"
+                  ]
+                },
+                "total_price_money": {
+                  "properties": {
+                    "currency": {
+                      "type": [
+                        "null",
+                        "string"
+                      ]
+                    },
+                    "amount": {
+                      "type": [
+                        "null",
+                        "integer"
+                      ]
+                    }
+                  },
+                  "type": [
+                    "null",
+                    "object"
+                  ]
+                },
+                "name": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "catalog_object_id": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "catalog_version": {
+                  "type": [
+                    "null",
+                    "integer"
+                  ]
+                }
+              },
+              "type": ["null", "object"]
+            }
           },
           "variation_total_price_money": {
             "properties": {
@@ -1384,7 +1459,7 @@
               "object"
             ]
           },
-          "total_taxd_money": {
+          "total_tax_money": {
             "properties": {
               "currency": {
                 "type": [
