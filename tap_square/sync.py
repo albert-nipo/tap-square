@@ -33,3 +33,4 @@ def sync(config, state, catalog): # pylint: disable=too-many-statements
 
     state = singer.set_currently_syncing(state, None)
     singer.write_state(state)
+    return state
