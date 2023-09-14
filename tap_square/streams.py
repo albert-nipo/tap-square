@@ -195,8 +195,8 @@ class Payments(Stream):
     tap_stream_id = 'payments'
     key_properties = ['id']
     replication_method = 'INCREMENTAL'
-    valid_replication_keys = ['updated_at']
-    replication_key = 'updated_at'
+    valid_replication_keys = ['created_at']
+    replication_key = 'created_at'
     object_type = 'PAYMENT'
 
     def sync(self, state, stream_schema, stream_metadata, config, transformer):
